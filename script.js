@@ -11,23 +11,10 @@ function save_search(html,url,addx) {
 		ht = ht.replace(/\"\>(.*)/g,"");
 		ht = ht.replace(/(.*)http/g,"http");
 
-/*
-alert(ht);
-
-	var res = JSON.stringify(html);
-		res = res.match(/(\<meta itemprop=\\"image\\" content=\\").+?(?=\/\>)/);
-		res = res.replace(/\"\>(.*)/g,"");
-		res = res.replace(/(.*)http/g,"http");
- 
-	var res = html.match(/\<header\>(.*)\/\>/);
-	var a = JSON.stringify(res);
-		a = a.substring(148,500);
-		a = a.replace(/\"(.*)/g,"");
-*/
 	
 	var img = ht.replace(/(\?k=)(.*)/,""); 
 	var add = addx.replace(/_/g, " ");
-	var save = '<div class="box"><a href="' + url + '"><img src="' + img + '" /><em class="addr">' + add +  '</em></a></div>';
+	var save = '<div class="box"><a href="' + url + '" target="_blank"><img src="' + img + '" alt="not available" /><em class="addr">' + add +  '</em></a></div>';
 	
 	//
 	$("#boxes").prepend( 
@@ -246,13 +233,13 @@ $("#fpm").click(function(){
 				
 				
 				
-				document.getElementById("tha_link").innerHTML = "<br><h2>sorry Fam we couldn't find that place</h2>";
+				document.getElementById("tha_link").innerHTML = "<br><h2>Sorry, we couldn't find that place!</h2>";
 			}
 		
 		
 		
 			else {
-				$("#tha_link").append("<br><br><h2>sorry Fam we couldn't find that place</h2>");
+				$("#tha_link").append("<br><br><h2>Sorry, we couldn't find that place!</h2>");
 			}
 			
 		

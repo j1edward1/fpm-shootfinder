@@ -9,8 +9,17 @@ header img, header ul{
 	position:fixed;
 	top:20px;
 	left:20px;
+	
+	-webkit-transition: .25s; 
+	-moz-transition: .25s; 
+	-o-transition: .25s; 
+	-ms-transition: .25s; 
+	transition: .25s;
 	}
- .et-social-icon .fa {
+#fpm-logo:hover {
+	opacity:0.8;
+	}
+.et-social-icon .fa {
 	background:#232932;
 	border-radius:30px;
 	color:#fff;
@@ -20,11 +29,31 @@ header img, header ul{
 	margin:7px 0px;
 	padding-top:7px;
 	}
-	
- .et-social-icons {
+.et-social-icons {
 	position:fixed;
 	left:40px;
 	top:160px;
+	}
+	
+	
+.et-social-icons-footer {
+	position:relative;
+	top:20px;
+	display:none;
+	}
+.et-social-icon-footer {
+	position:relative;
+	display:inline-block;
+	}
+.et-social-icon-footer .fa {
+	background:#232932;
+	border-radius:30px;
+	color:#fff;
+	font-size:26px;
+	width:40px;
+	height:40px;
+	margin:7px 0px;
+	padding-top:7px;
 	}
 	
 

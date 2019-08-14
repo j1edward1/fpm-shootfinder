@@ -11,6 +11,10 @@
 	<meta property="og:title" content="Shoot Finder | Full Package Media" />
 	<meta property="og:site_name" content="Full Package Media" />
 	
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/j1edward1/fpm-shootfinder/master/style.css" />
+    <script src="https://raw.githubusercontent.com/j1edward1/fpm-shootfinder/master/cookieMonster.js"></script>
+	
+	
 	<title>Shoot Finder | Full Package Media</title>
 	
 	<link rel="shortcut icon" href="https://fullpackagemedia.com/wp-content/uploads/2017/10/Logo-Web-FullPAckageMedia.png" />
@@ -83,7 +87,15 @@ Frisco, TX, 75035</textarea>
 		
 		
 					<footer id="main-footer">
-						<div id="footer-bottom">
+						<div id="footer-bottom">			
+							<ul class="et-social-icons-footer">
+							
+								<li class="et-social-icon-footer"> <a href="http://facebook.com/FullPackageMedia" target="_blank" class="icon"> <i title="Facebook" class="fa">&#xf082;</i>&nbsp; </a></li>
+								<li class="et-social-icon-footer"> <a href="https://www.youtube.com/channel/UCD89CqQ0FXF64kRD-p18LDA/videos" target="_blank" class="icon"> <i title="Youtube" class="fa">&#xf167;</i>&nbsp; </a></li>
+								<li class="et-social-icon-footer"> <a href="https://www.instagram.com/fullpackagemedia/" target="_blank" class="icon"> <i title="Instagram" class="fa">&#xf16d;</i>&nbsp; </a></li>
+								<li class="et-social-icon-footer"> <a href="https://fullpackagemedia.com/reviews" target="_blank" class="icon"> <i title="Google" class="fa">&#xf2b3;</i>&nbsp; </a></li>
+								
+							</ul>
 							<p id="footer-info"> &copy; 2019 Full Package Media. All rights reserved. All Full Package Media drone pilots are licensed under FAA Part 107| <a href="https://fullpackagemedia.com/sitemap/" id="sitemap">Sitemap</a> | <a href="https://fullpackagemedia.com/privacy-policy/">Privacy Policy</a>
 							</p>
 						</div>
@@ -104,4 +116,30 @@ Frisco, TX, 75035</textarea>
 
 </body>
 <script src="script.js"></script>
+<script src="https://raw.githubusercontent.com/j1edward1/fpm-shootfinder/master/script.js"></script>
+<script>
+$(document).ready(function(){
+
+	var w = window.innerWidth;
+	if (w <= 700) {
+		$("#fpm-logo").css("width",65);
+		$(".et-social-icons").css("display", "none");
+		$(".et-social-icons-footer").css("display", "inline-block");
+	}
+
+	$(window).resize(function(e){
+		var w = window.innerWidth;
+		if (w <= 700) {
+			$("#fpm-logo").css("width",65);
+			$(".et-social-icons").css("display", "none");
+			$(".et-social-icons-footer").css("display", "inline-block");
+		} else {
+			$("#fpm-logo").css("width",125);
+			$(".et-social-icons").css("display", "inline-block");
+			$(".et-social-icons-footer").css("display", "none");
+			
+		}
+	});
+});
+</script>
 </html>
